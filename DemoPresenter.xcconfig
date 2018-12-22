@@ -1,0 +1,21 @@
+//
+//  DemoPresenter.xcconfig
+//  DemoPresenter
+//
+//  Created by Wayne Hsiao on 2018/12/22.
+//  Copyright © 2018 Wayne Hsiao. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SKIP_INSTALL = YES
+ENABLE_BITCODE = NO
+CODE_SIGN_IDENTITY =
+CODE_SIGN_STYLE = Manual
+MACH_O_TYPE = mh_dylib
+// mh_executable
+// mh_bundle
+// mh_object
+// mh_dylib
+// staticlib

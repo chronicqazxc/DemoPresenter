@@ -1,0 +1,18 @@
+//
+//  DemoPresenterResources.xcconfig
+//  DemoPresenter
+//
+//  Created by Wayne Hsiao on 2018/12/22.
+//  Copyright © 2018 Wayne Hsiao. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SKIP_INSTALL = YES
+ENABLE_BITCODE = NO
+COMBINE_HIDPI_IMAGES = NO
+VERSIONING_SYSTEM = None
+CODE_SIGN_IDENTITY =
+CODE_SIGN_STYLE = Manual
+SDKROOT = iphoneos
