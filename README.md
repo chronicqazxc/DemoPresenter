@@ -1,7 +1,7 @@
 # DemoPresenter
 
 ## Purpose
-Intend to help standalone demo app implementation more quickly as well as easly.
+As a frameworks provider we usually need to demo our features internally before deliver to outside, is framework will help framework developers to integrate features with less code as possible so developers can focus on feature development.
 
 ## Demo
 ![](/.screenshots/demo.gif)
@@ -31,7 +31,7 @@ Title that will be displayed on the ```DemoPresenterTableViewController```.
 ## How to install
 | 3rd Management Tool | Script |
 |--|--|
-| Carthage | `github "https://github.com/chronicqazxc/DemoPresenter" 0.1.0` |
+| Carthage | (In `Cartfile.private`) `github "https://github.com/chronicqazxc/DemoPresenter" 0.1.0` |
 | CocoaPods ||
 
 
