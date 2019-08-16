@@ -24,14 +24,14 @@ class DemoPresenterTableViewController: UITableViewController {
         static let DestinedViewControllers = "DestinedViewControllers"
     }
 
-    lazy var dataSource: [String:String] = {
+    lazy var dataSource: [String] = {
         if let path = Bundle.main.path(forResource: Constant.DestinedViewControllers, ofType: "plist") {
-            return NSDictionary(contentsOfFile: path) as? [String:String] ?? [:]
+            return NSArray(contentsOfFile: path) as? [String] ?? []
         } else {
             let alertController = UIAlertController(title: "Warning", message: "\(Constant.DestinedViewControllers).plist is missing", preferredStyle: .alert)
             present(alertController, animated: true, completion: nil)
             print("\(Constant.DestinedViewControllers).plist is missing")
-            return [:]
+            return []
         }
     }()
     
@@ -62,24 +62,19 @@ class DemoPresenterTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.keys.count
+        return dataSource.count
     }
     
     override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        let viewControllerString = dataSource.map {
-            $0.value
-            }[indexPath.row]
-        
+        let viewControllerString = dataSource[indexPath.row]
         cell.textLabel?.text = demoViewControllerFromString(viewControllerString)?.title() ?? "\(viewControllerString) doesn't implemented protocol DestinedViewController"
         
         return cell
     }
     
     override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controller = dataSource.map {
-            $0.value
-            }[indexPath.row]
+        let controller = dataSource[indexPath.row]
         
         if let viewController = demoViewControllerFromString(controller) {
             let destination = viewController.destinedViewController()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A66E2DDA2306923F00B850AA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E2DD92306923F00B850AA /* TableViewController.swift */; };
 		B00CD93321CE303A00ED12D6 /* DemoPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = B00CD93121CE303A00ED12D6 /* DemoPresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B00CD94F21CE343800ED12D6 /* DemoPresenterResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B00CD94E21CE343800ED12D6 /* DemoPresenterResources.bundle */; };
 		B00CD95121CE346E00ED12D6 /* DemoPresenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00CD95021CE346E00ED12D6 /* DemoPresenterTableViewController.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A66E2DD92306923F00B850AA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B00CD92E21CE303A00ED12D6 /* DemoPresenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoPresenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00CD93121CE303A00ED12D6 /* DemoPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoPresenter.h; sourceTree = "<group>"; };
 		B00CD93221CE303A00ED12D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				B00CD95A21CE38C800ED12D6 /* AppDelegate.swift */,
 				B00CD95C21CE38C800ED12D6 /* ViewController.swift */,
+				A66E2DD92306923F00B850AA /* TableViewController.swift */,
 				B00CD95E21CE38C800ED12D6 /* Main.storyboard */,
 				B00CD96121CE38CB00ED12D6 /* Assets.xcassets */,
 				B00CD96321CE38CB00ED12D6 /* LaunchScreen.storyboard */,
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B00CD95D21CE38C800ED12D6 /* ViewController.swift in Sources */,
+				A66E2DDA2306923F00B850AA /* TableViewController.swift in Sources */,
 				B00CD95B21CE38C800ED12D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

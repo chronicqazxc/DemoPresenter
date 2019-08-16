@@ -3,11 +3,16 @@
 ## Purpose
 Intend to help standalone demo app implementation more quickly as well as easly.
 
+## Demo
+![](/.screenshots/demo.gif)
+
 ## How to use
-1. Prepare DestinedViewControllers.plist
-2. Implemented DestinedViewControllers (DemoViewControllers)
-3. Add destined view controllers into DestinedViewControllers.plist
-4. Present DemoPresenterTableViewController
+| Step | Screenshot |
+|--|--|
+| 1. Prepare DestinedViewControllers.plist | ![](/.screenshots/PrepareDestinedViewControllers.png) |
+| 2. Implemented DestinedViewControllers (DemoViewControllers) | ![](/.screenshots/DestinedViewController.png) |
+| 3. Add destined view controllers into DestinedViewControllers.plist | ![](/.screenshots/DestinedViewControllers.png) |
+| 4. Present DemoPresenterTableViewController | ![](/.screenshots/present.png) |
 
 ## DestinedViewControllers.plist
 A dictionary structure, key as discription and value as destination ViewController
