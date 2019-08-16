@@ -30,4 +30,4 @@ ViewController that will be presented when cell of ```DemoPresenterTableViewCont
 Title that will be displayed on the ```DemoPresenterTableViewController```.
 
 
-Auther: [chronicqazxc](chronicqazxc@gmail.com)
+Auther: [Wayne Hsiao](mailto:chronicqazxc@gmail.com)
