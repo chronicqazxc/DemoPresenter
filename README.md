@@ -15,8 +15,7 @@ Intend to help standalone demo app implementation more quickly as well as easly.
 | 4. Present DemoPresenterTableViewController | ![](/.screenshots/present.png) |
 
 ## DestinedViewControllers.plist
-A dictionary structure, key as discription and value as destination ViewController
-e.g.: key: Demo ViewController, value: ```DemoPresenterExample.ViewController```
+An array structure which contain sorted destination ViewController.
 
 ## Present ExampleTableViewController
 Initial DemoPresenterTableViewController by ```DemoPresenterTableViewController.destinedViewController()```
