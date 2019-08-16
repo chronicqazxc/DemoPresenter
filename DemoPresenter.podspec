@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DemoPresenter"
-  spec.version      = "0.0.1"
+  spec.version      = "0.1.0"
   spec.summary      = "Feature demo presenter"
   spec.swift_version = "4.2.1"
 
