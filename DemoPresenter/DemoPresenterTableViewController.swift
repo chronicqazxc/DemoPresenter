@@ -18,13 +18,13 @@ public protocol CustomTitle {
 
 public typealias DestinedViewController = Routable & CustomTitle
 
-class DemoPresenterTableViewController: UITableViewController {
+public class DemoPresenterTableViewController: UITableViewController {
     
     enum Constant {
         static let DestinedViewControllers = "DestinedViewControllers"
     }
 
-    lazy var dataSource: [String] = {
+    public private(set) lazy var dataSource: [String] = {
         if let path = Bundle.main.path(forResource: Constant.DestinedViewControllers, ofType: "plist") {
             return NSArray(contentsOfFile: path) as? [String] ?? []
         } else {
@@ -35,13 +35,13 @@ class DemoPresenterTableViewController: UITableViewController {
         }
     }()
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
