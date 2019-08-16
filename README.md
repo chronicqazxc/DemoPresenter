@@ -30,7 +30,7 @@ ViewController that will be presented when cell of ```DemoPresenterTableViewCont
 Title that will be displayed on the ```DemoPresenterTableViewController```.
 
 ## How to install
-|||
+| 3rd Management Tool | Script |
 |--|--|
 | Carthage | `github "https://github.com/chronicqazxc/DemoPresenter" 0.1.0` |
 | CocoaPods ||
