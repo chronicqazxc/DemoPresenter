@@ -28,11 +28,11 @@ ViewController that will be presented when cell of ```DemoPresenterTableViewCont
 2. ```func title() -> String```
 Title that will be displayed on the ```DemoPresenterTableViewController```.
 
-## How to install
+## Integration
 | 3rd Management Tool | Script |
 |--|--|
-| Carthage | (In `Cartfile.private`) `github "https://github.com/chronicqazxc/DemoPresenter" 0.1.0` |
-| CocoaPods ||
+| Carthage | (In `Cartfile.private`) `github "https://github.com/chronicqazxc/DemoPresenter" ~> 0.1.0` |
+| CocoaPods | `pod 'DemoPresenter', :git => 'https://github.com/chronicqazxc/DemoPresenter', ~> 0.1.0` |
 
 
 Auther: [Wayne Hsiao](mailto:chronicqazxc@gmail.com)
